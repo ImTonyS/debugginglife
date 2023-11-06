@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior: smooth;
+    --cremita: #F2EDD5;
+    --gris: #F2F2F2;
+    --naranja: #BF771F;
+    --naranjita: #BF861B;
+}
+
+body{
+    font-family: 'Manrope';
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 80px 0;
+}
+
+.container--hero{
+    padding: 0;
+}
+
+.nav{
+    height: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-menu{
+    background-color: var(--naranjita);
+    padding: 10px;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+    border-radius: 5px;
+}
+.nav_logo{
+    padding-top: 10px;
+    max-width: 70%;
+    height: auto;
+}
+
+.nav-list{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--cremita);
+    padding: 80px 0;
+
+    display: grid;
+    place-content: center;
+    text-align: center;
+    gap: 2.5rem;
+
+    list-style: none;
+
+    transform: translate(-100%);
+    transition: transform .3s;
+}
+
+.nav-list--show{
+    transform: translate(0);
+}
+
+.nav-link{
+    text-decoration: none;
+    color: var(--naranjita);
+    font-weight: 900;
+}
+
+/* SECCION PERIODICO */
+.periodico{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+h1{
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--naranjita);
+}
+
+.notas{
+    display: grid;
+    gap: 1.4rem;
+    text-align: center;
+    padding: 30px;
+    
+} 
+
+.notas h2{
+    font-size: 2rem;
+    padding-top: 20px;
+}
+
+.notas p{
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.notas img{
+    background-color: var(--cremita);
+    border-radius: 20px;
+    width: 90%;
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    justify-content: center;
+}
+
+
